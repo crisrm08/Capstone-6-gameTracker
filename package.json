@@ -1,0 +1,23 @@
+{
+  "name": "capstone-6-gametracker",
+  "version": "1.0.0",
+  "description": "Capstone project using Api and Postgres",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crisrm08/gameTracker.git"
+  },
+  "author": "Crisrm08",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crisrm08/gameTracker/issues"
+  },
+  "homepage": "https://github.com/crisrm08/gameTracker#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
+}
