@@ -1,0 +1,29 @@
+<div class="card">
+  <img src="<%= gameImage %>" alt="Game Image">
+  <div class="details-container">
+    <h3><%= gameName %></h3>
+
+    <div class="form-buttons">
+      <form action="/saveGame" method="POST">
+        <input type="hidden" name="game_name" value="<%= gameName %>">
+        <input type="hidden" name="game_image" value="<%= gameImage %>">
+        <label for="Ratings">Rating</label>
+        <select name="ratings" id="Ratings">
+          <option value="horrible" <%= rating === 'horrible' ? 'selected' : '' %>>Horrible</option>
+          <option value="bad" <%= rating === 'bad' ? 'selected' : '' %>>Bad</option>
+          <option value="decent" <%= rating === 'decent' ? 'selected' : '' %>>Decent</option>
+          <option value="good" <%= rating === 'good' ? 'selected' : '' %>>Good</option>
+          <option value="great" <%= rating === 'great' ? 'selected' : '' %>>Great</option>
+        </select>
+        <label for="last_time_played">Last time played:</label>
+        <input type="date" id="last_time_played" value=<%= formattedDate %> name="last_time_played">
+        <button id="save" type="submit">Save</button>
+      </form>
+      
+      <form action="/deleteGame" method="POST">
+        <input type="hidden" name="game_name" value="<%= gameName %>">
+          <button id="delete" type="submit">Delete</button>
+      </form>
+    </div>
+  </div>
+</div>

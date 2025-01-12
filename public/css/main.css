@@ -1,0 +1,39 @@
+/*HTML*/
+html{
+    height: 100vh;
+}
+/*Body*/
+body{
+    height: 100vh;
+    background-color: #0d0630;
+}
+
+/*Header*/
+.py-3.mb-3.border-bottom{
+    background-color: white;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.logo img{
+    width: 50px;
+}
+
+/*Main-Content*/
+.main-content {
+   height: 80%;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   justify-items: center;
+   gap: 40px;
+}
+
+.main-content h2{
+   color: #FFFFFF;
+}

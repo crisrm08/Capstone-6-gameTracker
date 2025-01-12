@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif; 
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(20% - 20px); 
+    min-width: 150px; 
+    max-width: 200px; 
+    height: fit-content;
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 10px; 
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 10px;
+    transition: transform 0.2s ease; 
+}
+
+.card:hover {
+    transform: translateY(-10px); 
+}
+
+.card img {
+    width: 180px;
+    height: 112.5px;
+    height: auto;
+    border-radius: 10px; 
+    margin-bottom: 15px; 
+}
+
+.details-container {
+    text-align: left;
+    width: 100%;
+}
+
+.details-container h3 {
+    margin: 10px 0;
+    color: #333; 
+    font-size: 16px;
+    font-weight: normal;
+}
+
+label {
+    color: #333; 
+    font-size: 14px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+select:focus {
+    outline: none;
+    background-color: #e8e8e8; 
+}
+
+select option {
+    padding: 8px;
+}
+
+h3:last-child {
+    font-size: 14px;
+    color: #777; 
+}
+
+#lastTime{
+    margin-top: 15px;
+}
+
+#date{
+    border-radius: 10px;
+    color: #333333;
+}
+
+.buttons{
+   display: flex;
+   flex-direction: row;
+   margin-top: 15px;
+   gap: 30px;
+}
+
+.form-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+}
+  
+
+#save {
+    margin-top: 15px;
+    background-color: #0076CE;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#save:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+#delete {
+    position:  relative;
+    top: 132px;
+    right: 40px;
+    background-color: #ef3a67;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#delete:hover {
+    background-color: #c32f58;
+    transform: scale(1.05);
+}
+
